@@ -4,7 +4,7 @@ def solution(node, index):
     if index == 0:
         return node.next_item
 
-    while index-1:
+    while index - 1:
         node = node.next_item
         index -= 1
 

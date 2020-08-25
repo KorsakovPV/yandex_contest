@@ -1,3 +1,29 @@
+"""
+K. Уникальный Стек
+
+Реализуйте класс StackSet, который хранит только уникальные элементы. При этом
+операция добавления элемента в стек должна выполняться за O(1).
+
+Формат ввода
+В первой строке записано одно число - количество команд. Далее идут команды по
+одной на строке. Команды могут быть следующих видов:
+
+push x - добавить число x в стек
+
+pop - удалить число с вершины стека
+
+peek - напечатать число с вершины стека (без удаления)
+
+size - узнать размер стека
+
+Если стек пуст при вызове команд pop и peak нужно вывести на печать error.
+
+Формат вывода
+Для каждой команды size напечатайте результат её выполнения. Если происходит
+удаление из пустого стека - напечатайте error.
+"""
+
+
 class StackSet:
     def __init__(self):
         self.items = []
@@ -12,18 +38,18 @@ class StackSet:
             self.items_set.add(item)
 
     def pop(self):
-        if len(self.items)>0:
-            self.items_set.remove(self.items[len(self.items)-1])
+        if len(self.items) > 0:
+            self.items_set.remove(self.items[len(self.items) - 1])
             return self.items.pop()
         return 'error\n'
 
     def peek(self):
-        if len(self.items)>0:
-            return str(self.items[len(self.items)-1])+ '\n'
+        if len(self.items) > 0:
+            return str(self.items[len(self.items) - 1]) + '\n'
         return 'error\n'
 
     def size(self):
-        return str(len(self.items))+ '\n'
+        return str(len(self.items)) + '\n'
 
 
 f = open('input.txt')
@@ -47,7 +73,7 @@ for i in commands:
             stack.pop()
     elif command[0] == 'size':
         output_file += stack.size()
-        
+
 print(output_file)
 f = open('output.txt', 'w')
 f.write(output_file + '\n')

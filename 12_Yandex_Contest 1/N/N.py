@@ -1,7 +1,23 @@
+"""
+N. Степень четырех
+
+Вася на уроке математики проходил степени. Он хочет написать программу, которая
+определяет, будет ли положительное целое число степенью четверки.
+
+Формат ввода
+На вход подается целое число в диапазоне от 1 до 10000.
+
+Формат вывода
+True, если число является степенью четырех, False - в обратном случае.
+
+
+"""
+
 from math import log
+
 f = open('input.txt')
 input_file = int(f.read().strip())
-output_data = str(log(input_file,4).is_integer())
+output_data = str(log(input_file, 4).is_integer())
 f = open('output.txt', 'w')
 f.write(output_data + '\n')
 f.close()

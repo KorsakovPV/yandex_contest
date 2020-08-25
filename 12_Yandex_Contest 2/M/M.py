@@ -1,4 +1,6 @@
 """
+M. Очередь
+
 Перед Тимофеем стоит задача написать несколько реализаций собственной очереди,
 так как доступные на рынке варианты для проекта не подходят. Требования к
 первой вот такие: класс должен называться MyQueue(), поддерживать операции
@@ -79,7 +81,7 @@ for i in commands:
     elif command[0] == 'size':
         output_file += str(queue.size()) + '\n'
 
-#print(output_file)
+# print(output_file)
 f = open('output.txt', 'w')
 f.write(output_file + '\n')
 f.close()

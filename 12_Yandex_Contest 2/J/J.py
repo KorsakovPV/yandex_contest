@@ -1,3 +1,32 @@
+"""
+J. Стек - MaxEffective
+
+Реализуйте класс StackMaxEffective, поддерживающий операцию определения
+максимума среди элементов в стеке. Сложность операции должна быть O(1).
+Для пустого стека операция должна возвращать None. При этом push и pop также
+должны выполняться за константное время.
+
+Формат ввода
+В первой строке записано одно число - количество команд, оно не превосходит
+100000. Далее идут команды по одной в строке. Команды могут быть следующих
+видов:
+
+push x - добавить число x в стек
+
+pop - удалить число с вершины стека
+
+get_max - напечатать максимальное число в стеке
+
+Если стек пуст при вызове команды get_max нужно напечатать None, для команды
+pop - error.
+
+Формат вывода
+Для каждой команды get_max напечатайте результат её выполнения. Если стек
+пустой, для команды get_max напечатайте None. Если происходит удаление из
+пустого стека - напечатайте error.
+"""
+
+
 class StackMaxEffective:
     def __init__(self):
         self.items = []
@@ -9,18 +38,18 @@ class StackMaxEffective:
     def push(self, item):
         if self.isEmpty():
             self.max.append(item)
-        elif self.max[len(self.max)-1]<item:
-            self.max.append(item)     
+        elif self.max[len(self.max) - 1] < item:
+            self.max.append(item)
         self.items.append(item)
 
     def pop(self):
-        if len(self.items)>0 and len(self.max)>0:
-            if self.items[len(self.items)-1]==self.max[len(self.max)-1]:
+        if len(self.items) > 0 and len(self.max) > 0:
+            if self.items[len(self.items) - 1] == self.max[len(self.max) - 1]:
                 self.max.pop()
             return self.items.pop()
 
     def peek(self):
-        return self.items[len(self.items)-1]
+        return self.items[len(self.items) - 1]
 
     def size(self):
         return len(self.items)
@@ -29,7 +58,7 @@ class StackMaxEffective:
         if self.isEmpty():
             return 'None\n'
         else:
-            return str(self.max[len(self.max)-1])+'\n'
+            return str(self.max[len(self.max) - 1]) + '\n'
 
 
 f = open('input3.txt')
@@ -51,7 +80,7 @@ for i in commands:
             output_file += 'error\n'
         else:
             stack.pop()
-        
+
 print(output_file)
 f = open('output.txt', 'w')
 f.write(output_file + '\n')

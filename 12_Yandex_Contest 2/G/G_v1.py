@@ -4,5 +4,5 @@ def solution(node, value):
         if node.value == value:
             return index
         node = node.next_item
-        index += 1    
+        index += 1
     return -1
