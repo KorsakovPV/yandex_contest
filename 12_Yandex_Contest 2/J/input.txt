@@ -1,0 +1,102 @@
+94
+push 1
+get_max
+push 3
+get_max
+push 1
+get_max
+push 2
+get_max
+push 1
+get_max
+push 5
+get_max
+push 3
+get_max
+push 0
+get_max
+push 2
+get_max
+push 8
+get_max
+push 2
+get_max
+push 6
+get_max
+push 8
+get_max
+push 0
+get_max
+push 0
+get_max
+push 5
+get_max
+push 7
+get_max
+push 10
+get_max
+push 6
+get_max
+push 0
+get_max
+push 8
+get_max
+push 8
+get_max
+push 3
+get_max
+push 3
+get_max
+push 2
+get_max
+push 2
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+get_max
+pop
+pop
+pop
+pop
+pop
+pop
+

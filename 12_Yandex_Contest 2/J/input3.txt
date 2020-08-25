@@ -1,0 +1,5 @@
+94
+push -200
+get_max
+pop
+

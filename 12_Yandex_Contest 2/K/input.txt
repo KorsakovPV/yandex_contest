@@ -1,0 +1,5 @@
+20
+size
+push 1
+peek
+size
