@@ -1,0 +1,6 @@
+10
+1
+push 1
+pop
+push 3
+push 3
