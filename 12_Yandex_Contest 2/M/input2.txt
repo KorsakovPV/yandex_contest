@@ -1,1 +1,11 @@
-()
+10
+push 4
+pop
+push -1
+size
+push 0
+size
+push -4
+size
+pop
+peek

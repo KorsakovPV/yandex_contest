@@ -1,1 +1,11 @@
-{[()]}
+10
+size
+push 0
+pop
+push 2
+size
+push -2
+pop
+push -8
+push 4
+push 6

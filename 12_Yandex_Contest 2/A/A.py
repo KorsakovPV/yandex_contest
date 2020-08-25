@@ -9,9 +9,15 @@ for course in visited_optional_courses:
         unique_courses.append(course)
 #print(unique_courses)
 output_file = '\n'.join((unique_courses))#sorted
-#print(output_file)
+print(output_file)
 #sorted(unique_courses)
 f = open('output.txt', 'w')
 f.write(output_file + '\n')
 f.close()
 
+# В
+m = n
+
+visited_optional_courses = [i for n, i in enumerate(visited_optional_courses) if i not in visited_optional_courses[:n] and i != '']
+print('Владимир')
+print('\n'.join(visited_optional_courses))
