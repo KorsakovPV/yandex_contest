@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2415948e-69cd-453b-ae67-635877d23b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/input1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/B/B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/B/B_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/A-v1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Yandex_Final_Tasks/B/B_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/B/B_v1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +206,7 @@
       <workItem from="1598327112779" duration="36000" />
       <workItem from="1598327184913" duration="10327000" />
       <workItem from="1598358986151" duration="19861000" />
-      <workItem from="1598436351089" duration="13850000" />
+      <workItem from="1598436351089" duration="14331000" />
     </task>
     <servers />
   </component>
