@@ -87,7 +87,7 @@ class Stack:
             return self.operands.pop()
 
 
-f = open('input2.txt')
+f = open('input.txt')
 input_file = f.read().rstrip().split()
 f.close()
 
@@ -99,19 +99,19 @@ for i in input_file:
     if i == '+':
         operand1 = stack.pop()
         operand2 = stack.pop()
-        stack.push(operand1 + operand2)
+        stack.push(operand2 + operand1)
     elif i == '-':
         operand1 = stack.pop()
         operand2 = stack.pop()
-        stack.push(operand1 - operand2)
+        stack.push(operand2 - operand1)
     elif i == '*':
         operand1 = stack.pop()
         operand2 = stack.pop()
-        stack.push(operand1 * operand2)
+        stack.push(operand2 * operand1)
     elif i == '/':
         operand1 = stack.pop()
         operand2 = stack.pop()
-        stack.push(operand1 // operand2)
+        stack.push(operand2 // operand1)
     else:
         stack.push(int(i))
 output_file = str(stack.pop())
