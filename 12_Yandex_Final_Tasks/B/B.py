@@ -41,30 +41,33 @@ class Node:
         return self.value
 
 def hasCycle(node):
+    if type(node) != Node:
+        return
+
+    if node.next is None:
+        return False
+
     iter_step1 = iter_step2 = node
-    while True:  # not (iter_step1 is None) or not (iter_step2 is None)
-        if iter_step2 is None or iter_step2.next is None:
-            return False
+    while iter_step2 is not None and iter_step2.next is not None:
         iter_step1 = iter_step1.next
         iter_step2 = iter_step2.next.next
 
         if iter_step1 == iter_step2:
             return True
+    return False
+
+if __name__ == '__main__':
+    nnn = []
+
+    nnn.append(Node('last'))
+
+    for i in range(10):
+        nnn.append(Node(str(i), nnn[i]))
+
+    nnn[0].next = nnn[len(nnn)-1]
 
 
-nnn = []
 
-nnn.append(Node('last'))
-
-for i in range(10):
-    nnn.append(Node(str(i), nnn[i]))
-
-# nnn[0].next = nnn[len(nnn)-1]
-
-
-# n3 = Node('third')
-# n2 = Node('second', n3)
-# n1 = Node('first', n2)
-# n3 = Node.next_item = n1
-
-print(hasCycle(nnn[len(nnn)-1]))
+    print(hasCycle([]))
+    print(hasCycle(Node('lasttttt')))
+    print(hasCycle(nnn[len(nnn)-1]))
