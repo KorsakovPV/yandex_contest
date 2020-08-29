@@ -19,19 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2415948e-69cd-453b-ae67-635877d23b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/13_Yandex_Contest/А/A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Yandex_Contest/А/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Yandex_Contest/А/input1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Yandex_Contest/А/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Yandex_Contest/А/input3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Yandex_Contest/А/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2415948e-69cd-453b-ae67-635877d23b14" name="Default Changelist" comment="29/08/20 Sprint 13 Tast A">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Yandex_Contest 2/I/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/12_Yandex_Contest 2/I/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Yandex_Contest 2/Q/Q.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Yandex_Contest 2/Q/Q.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/A.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Yandex_Final_Tasks/A/A.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Contest/А/A.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Contest/А/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Contest/А/input1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Contest/А/input2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Contest/А/input3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Contest/А/input4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Contest/А/output.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,29 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.A (3)">
+  <component name="RunManager" selected="Python.A (1)">
+    <configuration name="A (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yandex_contest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/13_Yandex_Contest/A" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/13_Yandex_Contest/A/A.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="A (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yandex_contest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,28 +117,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/13_Yandex_Contest/А/A.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="A" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="yandex_contest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_Yandex_Contest 1/A" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12_Yandex_Contest 1/A/A.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -195,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.A (1)" />
         <item itemvalue="Python.A (3)" />
         <item itemvalue="Python.A (2)" />
         <item itemvalue="Python.C" />
         <item itemvalue="Python.B" />
-        <item itemvalue="Python.A" />
       </list>
     </recent_temporary>
   </component>
@@ -220,8 +216,16 @@
       <workItem from="1598578484871" duration="35501000" />
       <workItem from="1598642958651" duration="212000" />
       <workItem from="1598664289837" duration="5199000" />
-      <workItem from="1598684507873" duration="8863000" />
+      <workItem from="1598684507873" duration="9619000" />
     </task>
+    <task id="LOCAL-00001" summary="29/08/20 Sprint 13 Tast A">
+      <created>1598697804614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598697804614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +243,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="29/08/20 Sprint 13 Tast A" />
+    <option name="LAST_COMMIT_MESSAGE" value="29/08/20 Sprint 13 Tast A" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="418" y="197" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598336547600">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -252,25 +260,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598603922460" />
-    <state width="1878" height="331" key="GridCell.Tab.0.bottom" timestamp="1598697566931">
+    <state width="1878" height="331" key="GridCell.Tab.0.bottom" timestamp="1598698237360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="331" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598697566931" />
+    <state width="1878" height="331" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598698237360" />
     <state width="1324" height="200" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1598667793372" />
-    <state width="1878" height="331" key="GridCell.Tab.0.center" timestamp="1598697566931">
+    <state width="1878" height="331" key="GridCell.Tab.0.center" timestamp="1598698237360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="331" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598697566931" />
+    <state width="1878" height="331" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598698237360" />
     <state width="1324" height="200" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1598667793371" />
-    <state width="1878" height="331" key="GridCell.Tab.0.left" timestamp="1598697566931">
+    <state width="1878" height="331" key="GridCell.Tab.0.left" timestamp="1598698237360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="331" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598697566931" />
+    <state width="1878" height="331" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598698237360" />
     <state width="1324" height="200" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1598667793371" />
-    <state width="1878" height="331" key="GridCell.Tab.0.right" timestamp="1598697566931">
+    <state width="1878" height="331" key="GridCell.Tab.0.right" timestamp="1598698237360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="331" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598697566931" />
+    <state width="1878" height="331" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598698237360" />
     <state width="1324" height="200" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1598667793372" />
     <state width="1878" height="445" key="GridCell.Tab.1.bottom" timestamp="1598695654499">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -300,6 +308,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="174" key="SettingsEditor/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598327477874" />
+    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1598698080554">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598698080554" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1598620413159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
