@@ -56,7 +56,7 @@ class MyQueueSized:
 
     def push_front(self, item):
         if self.size_queue < self.max_n:
-            if self.queue[self.head] is None:
+            if self.isEmpty():
                 self.queue[self.head] = item
             else:
                 self.head = (self.head - 1) % self.max_n
@@ -66,7 +66,7 @@ class MyQueueSized:
 
     def push_back(self, item):
         if self.size_queue < self.max_n:
-            if self.queue[self.tail] is None:
+            if self.isEmpty():
                 self.queue[self.tail] = item
             else:
                 self.tail = (self.tail - 1) % self.max_n

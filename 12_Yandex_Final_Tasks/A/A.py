@@ -75,6 +75,10 @@ A. Калькулятор
 class Stack:
     def __init__(self):
         self.operands = []
+        self.d = {'+': self.addition,
+                  '-': self.subtraction,
+                  '*': self.multiplication,
+                  '/': self.division}
 
     def is_empty(self):
         return self.operands == []
@@ -86,44 +90,46 @@ class Stack:
         if not self.is_empty():
             return self.operands.pop()
 
-
-def calc(input_file):
-    def addition(operand1, operand2):
+    def addition(self, operand1, operand2):
         return operand2 + operand1
 
-    def subtraction(operand1, operand2):
+    def subtraction(self, operand1, operand2):
         return operand2 - operand1
 
-    def multiplication(operand1, operand2):
+    def multiplication(self, operand1, operand2):
         return operand2 * operand1
 
-    def division(operand1, operand2):
+    def division(self, operand1, operand2):
         return operand2 // operand1
 
-    d = {'+': addition,
-         '-': subtraction,
-         '*': multiplication,
-         '/': division}
+
+def calc(input_file):
+    stack = Stack()
 
     for i in input_file:
-        if i in d.keys():
+        if i in stack.d.keys():
             operand1 = stack.pop()
             operand2 = stack.pop()
-            stack.push(d[i](operand1, operand2))
+            stack.push(stack.d[i](operand1, operand2))
         else:
             stack.push(int(i))
     return stack.pop()
 
 
-if __name__ == '__main__':
-    f = open('input.txt')
+def main(input_file):
+    f = open(input_file)
     input_file = f.read().rstrip().split()
     f.close()
 
-    stack = Stack()
+    return str(calc(input_file)) + '\n'
+    # print(output_file)
 
-    output_file = str(calc(input_file))
-    print(output_file)
+
+if __name__ == '__main__':
+    print(main('input.txt') + '\n')
     f = open('output.txt', 'w')
-    f.write(output_file + '\n')
+    f.write(main('input.txt'))
     f.close()
+
+    assert main('input1.txt') == '9' + '\n', "input1.txt error"
+    assert main('input2.txt') == '38' + '\n', "input2.txt error"
