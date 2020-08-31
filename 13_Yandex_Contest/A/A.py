@@ -25,13 +25,11 @@ A. Расписание
 class Stack:
     def __init__(self):
         self.lessons = []
-        self.total_duration = 0
 
     def is_empty(self):
         return self.lessons == []
 
     def push(self, lesson):
-        self.total_duration += lesson[2]
         self.lessons.append(lesson)
 
     def pop(self, lesson=None):
@@ -76,27 +74,16 @@ def calc(input_file):
             [float(lesson.split()[0]), float(lesson.split()[1]),
              float(lesson.split()[1]) - float(lesson.split()[0]), lesson])
 
+    input_lessons_stack.sort(key='head', reverse=False)
     input_lessons_stack.sort(key='tail', reverse=False)
     select_lessons_stack.push(input_lessons_stack.peak(0))
 
-    for i in range(len(input_lessons_stack.lessons)):
+    for i in range(1, len(input_lessons_stack.lessons)):
         if select_lessons_stack.lessons[len(select_lessons_stack.lessons) - 1][
             1] <= input_lessons_stack.lessons[i][0]:
             select_lessons_stack.push(input_lessons_stack.peak(i))
 
     max_duration_stack = select_lessons_stack
-
-    # Способ 2
-    select_lessons_stack = Stack()
-    input_lessons_stack.sort(key='head', reverse=False)
-    select_lessons_stack.push(input_lessons_stack.peak(0))
-    for i in range(len(input_lessons_stack.lessons)):
-        if select_lessons_stack.lessons[len(select_lessons_stack.lessons) - 1][
-            1] <= input_lessons_stack.lessons[i][0]:
-            select_lessons_stack.push(input_lessons_stack.peak(i))
-
-    if select_lessons_stack.total_duration > max_duration_stack.total_duration:
-        max_duration_stack = select_lessons_stack
 
     output_file = str(len(max_duration_stack.lessons)) + '\n'
 
@@ -115,7 +102,7 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    input_txt = 'input.txt'
+    input_txt = 'input6.txt'
 
     f = open('output.txt', 'w')
 
@@ -132,5 +119,13 @@ if __name__ == '__main__':
     assert main(
         'input3.txt') == '3\n7 14\n19 19\n22 23\n', "input3.txt error\n" + main(
         'input3.txt')
-    assert main('input4.txt') == '1\n1 10\n', "input4.txt error\n" + main(
+    assert main('input4.txt') == '1\n5 6\n', "input4.txt error\n" + main(
         'input4.txt')
+    assert main('input5.txt') == '1\n10 13\n', "input5.txt error\n" + main(
+        'input5.txt')
+    assert main(
+        'input6.txt') == '21\n0 2\n2 2\n2 3\n4 4\n4 4\n5 5\n8 8\n8 11\n12 12\n13 13\n13 13\n14 14\n14 14\n15 16\n16 17\n17 18\n19 19\n19 19\n20 20\n20 20\n20 21\n', "input6.txt error\n" + main(
+        'input6.txt')
+    assert main(
+        'input7.txt') == '15\n1.1 2.3\n3.8 3.8\n5.4 6.9\n7.3 9.2\n10.2 11.2\n12.6 12.7\n13.5 14.1\n15 15.3\n15.3 15.4\n15.4 16.6\n16.7 17.2\n17.2 17.6\n18.4 18.7\n19.8 19.8\n19.8 20.6\n', "input7.txt error\n" + main(
+        'input7.txt')

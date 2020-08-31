@@ -48,7 +48,7 @@ output_file = ''
 
 output_file = str(findAnagrams(string, template))
 
-# print(output_file)
+print(output_file)
 f = open('output.txt', 'w')
 f.write(output_file + '\n')
 f.close()

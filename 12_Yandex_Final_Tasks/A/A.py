@@ -122,7 +122,6 @@ def main(input_file):
     f.close()
 
     return str(calc(input_file)) + '\n'
-    # print(output_file)
 
 
 if __name__ == '__main__':
