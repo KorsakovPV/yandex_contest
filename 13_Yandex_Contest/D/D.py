@@ -1,70 +1,80 @@
 """
-C. Подпоследовательность
+D. Ценный рюкзак
 
-Вася любит играть в игру Подпоследовательность. Даны 2 строки, и нужно понять,
-является ли первая из них подпоследовательностью второй. Когда строки
-достаточно длинные, иногда очень трудно получить ответ на этот вопрос, просто
-посмотрев на них. Помогите Васе, напишите функцию, которая решает эту задачу.
+Реализуйте код алгоритма заполнения рюкзака, рассмотренного в лекции.
 
 Формат ввода
-В первой строке записана строка s.
+В первой строке записано целое число с в диапазоне от 0 до 1000 — вместимость
+рюкзака.
 
-Во второй — строка t.
+Во второй — число n — количество предметов. Оно не больше 10000.
 
-Обе строки состоят из маленьких латинских букв, длины строк не превосходят
-100000.
+В следующих n строках записано по 2 числа, разделенные пробелом: стоимость
+предмета и его вес. Оба числа не превосходят 1000
 
 Формат вывода
-Выведите True, если s является подпоследовательностью t, иначе — False.
+Нужно в строке вывести в отсортированном порядке номера предметов, которые
+будут выбраны. Номер предмета - это порядковый номер его появления во входных
+данных. (Индексация начинается с нуля)
+
+Примечания
+Если стоимость предметов одинаковая, то выбираем предмет с меньшим весом. Если
+при этом и вес одинаковый, выбираем тот, который пришел на вход первым.
 """
 
 
-def subsequence(input_file):
-    s = input_file.strip().split()
-    if len(s)>1:
-        sub_string = [x for x in s[0]]
-        main_string = [x for x in s[1]]
-    else:
-        sub_string = []
-        main_string = [x for x in s[0]]
-    # sub_string.sort()
-    # main_string.sort()
+def valuable_backpack(input_file):
+    s = input_file.strip().split('\n')
+    weight_max, n = int(s[0]), int(s[1])
+    data = s[2:]
+    items = []
+    weight_backpack = 0
+    for i in range(len(data)):
+        temp = data[i].split()
+        items.append([i, int(temp[0]), int(temp[1])])
 
-    while len(main_string) > 0 and len(sub_string) > 0:
-        i_sub_string = main_string.pop()
-        if i_sub_string == sub_string[len(sub_string) - 1]:
-            sub_string.pop()
+    backpack = []
 
-    if sub_string == []:
-        return 'True' + '\n'
-    else:
-        return 'False' + '\n'
+    items.sort(key=lambda x: x[2], reverse=True)
+    items.sort(key=lambda x: x[1])
+
+    while items != []:
+        temp = items.pop()
+        if temp[2] <= weight_max - weight_backpack:
+            weight_backpack += temp[2]
+            backpack.append(temp)
+        if weight_max - weight_backpack == 0:
+            break
+
+    output = ''
+
+    backpack.sort(key=lambda x: x[0])
+    for i in backpack:
+        output += str(i[0]) + ' '
+
+    return output.rstrip() + '\n'
 
 
 def main(input_file):
-    f = open(input_file)
-    input_file = f.read()
-    f.close()
+    # f = open(input_file)
+    with open(input_file) as f:
+        input_file = f.read()
+    # f.close()
 
-    return str(subsequence(input_file))
+    return str(valuable_backpack(input_file))
 
 
 if __name__ == '__main__':
-    input_txt = 'input.txt'
+    input_txt = 'input2.txt'
 
-    f = open('output.txt', 'w')
-
-    f.write(main(input_txt) + '\n')
+    with open('output.txt', 'w') as f:
+        f.write(main(input_txt) + '\n')
 
     f.close()
 
     # print(main(input_txt))
 
-    assert main('input1.txt') == 'True\n', 'input1.txt error\n' + main(
+    assert main('input1.txt') == '3\n', 'input1.txt error\n' + main(
         'input1.txt')
-    assert main('input2.txt') == 'False\n', 'input2.txt error\n' + main(
+    assert main('input2.txt') == '1 2 3\n', 'input2.txt error\n' + main(
         'input2.txt')
-    assert main('input3.txt') == 'True\n', 'input3.txt error\n' + main(
-        'input3.txt')
-    assert main('input4.txt') == 'True\n', 'input4.txt error\n' + main(
-        'input4.txt')
