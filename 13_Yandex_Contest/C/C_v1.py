@@ -20,22 +20,19 @@ C. Подпоследовательность
 
 
 def subsequence(input_file):
-    s = input_file.strip().split()
-    if len(s)>1:
-        sub_string = [x for x in s[0]]
-        main_string = [x for x in s[1]]
-    else:
-        sub_string = []
-        main_string = [x for x in s[0]]
-    # sub_string.sort()
-    # main_string.sort()
+    s = input_file.rstrip().split('\n')
+    sub_string = s[0]
+    main_string = s[1]
 
-    while len(main_string) > 0 and len(sub_string) > 0:
-        i_sub_string = main_string.pop()
-        if i_sub_string == sub_string[len(sub_string) - 1]:
-            sub_string.pop()
+    i_sub_string = len(s[0])
+    i_main_string = len(s[1])
 
-    if sub_string == []:
+    while i_main_string > 0 and i_sub_string > 0:
+        if sub_string[i_sub_string - 1] == main_string[i_main_string - 1]:
+            i_sub_string -= 1
+        i_main_string -= 1
+
+    if i_sub_string == 0:
         return 'True' + '\n'
     else:
         return 'False' + '\n'
