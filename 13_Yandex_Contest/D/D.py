@@ -65,7 +65,7 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    input_txt = 'input2.txt'
+    input_txt = 'input3.txt'
 
     with open('output.txt', 'w') as f:
         f.write(main(input_txt) + '\n')
