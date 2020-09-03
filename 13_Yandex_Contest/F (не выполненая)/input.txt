@@ -1,5 +1,5 @@
 3
-3
-cba
-daf
-ghi
+1
+c
+d
+g

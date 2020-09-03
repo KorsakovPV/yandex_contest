@@ -28,19 +28,17 @@ def сookies(input_file):
     n = int(s[0])
     m = int(s[1])
     strings = s[2:]
-    n = s[0]
     answer = 0
-    if m == 1:
-        return str(0) + '\n'
+    # if m == 1:
+    #     return str(0) + '\n'
 
-    for string in strings:
-        for s in range(m - 1):
-            if ord(string[s]) <= ord(string[s + 1]):
+    for i_m in range(m):
+        for i_n in range(n-1):
+            if strings[i_n][i_m]>strings[i_n+1][i_m]:
                 answer += 1
-                s.pop()
-                print(ord(string[s]))
+                break
 
-    return str(0) + '\n'
+    return str(answer) + '\n'
 
 
 def main(input_file):
@@ -55,8 +53,6 @@ if __name__ == '__main__':
 
     with open('output.txt', 'w') as f:
         f.write(main(input_txt) + '\n')
-
-    f.close()
 
     assert main('input1.txt') == '1\n', 'input1.txt error\n' + main(
         'input1.txt')
