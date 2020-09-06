@@ -26,40 +26,15 @@ k - общий бюджет, не превосходит 10000
 
 """
 
-
-def calc(input_file):
-    s = input_file.strip().split()
-    n = int(s[0])
-    k = int(s[1])
-    home_value_array = [int(x) for x in s[2:]]
-    home_value_array.sort()
-    count = 0
-    count_value = 0
-    for home_value in home_value_array:
-        if k - count_value > home_value:
-            if n == 0:
-                break
-            n -= 1
-            count += 1
-            count_value += home_value
-
-    return str(count) + '\n'
-
-
-def main(input_file):
-    with open(input_file) as f:
-        input_file = f.read()
-
-    return str(calc(input_file))
-
-
-if __name__ == '__main__':
-    input_txt = 'input.txt'
-
-    with open('output.txt', 'w') as f:
-        f.write(main(input_txt) + '\n')
-
-    assert main('input1.txt') == '0\n', 'input1.txt error\n' + main(
-        'input1.txt')
-    assert main('input2.txt') == '2\n', 'input2.txt error\n' + main(
-        'input2.txt')
+nk = [int(i) for i in input().split()]
+houses_costs = [int(i) for i in input().split()]
+print(10)
+houses_costs.sort()
+i = 0
+n = len(houses_costs)
+while houses_costs[i] <= nk[1]:
+    nk[1] -= houses_costs[i]
+    i += 1
+    if i == n:
+        break
+print(i)

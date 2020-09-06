@@ -30,6 +30,8 @@ def subarray(input_file):
             if count_max < count:
                 count_max = count
             count = 1
+        if count_max < count:
+            count_max = count
 
     return str(count_max) + '\n'
 
@@ -42,7 +44,7 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    input_txt = 'input3.txt'
+    input_txt = 'input.txt'
 
     with open('output.txt', 'w') as f:
         f.write(main(input_txt) + '\n')
