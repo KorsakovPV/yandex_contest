@@ -25,30 +25,17 @@ L. Лестница
 
 # n = int(input())
 # degrees = list(map(int, input().split()))
-n = 5
-degrees = [1, 3, 0, 12, 2]
+# n = 5
+# degrees = [1, 2, 3, 4, 5]
+n = 7
+degrees = [1, 2, 4, 2, 0, 0, 1]
 
-index = n
+index = n - 1
 while index:
-    if n == 0:
-        degrees[0] = False
-        break
-    if n == 1 and degrees[0] == 1:
-        degrees[0] = True
-        break
-
-    if index == n:
-        index -= 1
-        degrees[index] = True
-
     index -= 1
+    if index + degrees[index] >= n:
+        degrees[index] = 0
+    if degrees[index + degrees[index]] == 0:
+        degrees[index] = 0
 
-    if index + degrees[index] <= n - 1:
-        if degrees[index + degrees[index]]:
-            degrees[index] = True
-        else:
-            degrees[index] = False
-    else:
-        degrees[index] = False
-
-print(degrees[0])
+print(bool(degrees[0]))
