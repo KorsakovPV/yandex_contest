@@ -18,7 +18,7 @@ input.txt.
 
 def fibonacci_numbers(n):
     assert n >= 0
-    if n not in cache:
+    if cache.get(n) is None:
         cache[n] = 1 if n <= 1 else fibonacci_numbers(
             n - 1) + fibonacci_numbers(n - 2)
     return cache[n]
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     with open('output.txt', 'w') as f:
         f.write(main(input_txt) + '\n')
 
-    assert main('input1.txt') == '3', 'input1.txt error\n' + main(
+    assert main('input1.txt') == '3\n', 'input1.txt error\n' + main(
         'input1.txt')
-    assert main('input2.txt') == '1', 'input2.txt error\n' + main(
+    assert main('input2.txt') == '1\n', 'input2.txt error\n' + main(
         'input2.txt')
