@@ -18,10 +18,10 @@ input.txt.
 
 def fibonacci_numbers(n):
     assert n >= 0
-    if cache.get(n) is None:
-        cache[n] = 1 if n <= 1 else fibonacci_numbers(
-            n - 1) + fibonacci_numbers(n - 2)
-    return cache[n]
+    f0, f1 = 1, 1
+    for i in range(n - 1):
+        f0, f1 = f1, f0 + f1
+    return f1
 
 def main(input_file):
     with open(input_file) as f:
