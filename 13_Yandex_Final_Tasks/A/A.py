@@ -70,7 +70,7 @@ A. Фотокопии
 """
 
 
-def solution(a, b, nod):
+def solution(n, size_data_center):
     return 0
 
 

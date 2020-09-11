@@ -22,34 +22,80 @@ N. Безупречные коэффициенты
 Если a и b равны, то коэффициенты нужно выводить в отсортированном порядке.
 Нужно выводить минимальную по модулю пару таких коэффициентов.
 """
+import timeit
+
+
+def solution5(a, b):
+    pass
+
+
+def solution5(num1, num2, nod=None):
+    if num1 == 0:
+        return (num2, 0, 1)
+    else:
+        div, x, y = solution5(num2 % num1, num1)
+    return (div, y - (num2 // num1) * x, x)
+
+
+def solution4(a, b, nod):  # Test 4 TL
+
+    x0 = int(nod / a)
+    y = (nod - a * x0) / b
+    x = x0
+    while int(y) != y:
+        x += 1
+        y = (nod - a * x) / b
+    answer_plus = [x, int(y)]
+    x = x0
+    y = 0.1
+    while int(y) != y:
+        x -= 1
+        y = (nod - a * x) / b
+    answer_minus = [x, int(y)]
+
+    if abs(answer_plus[0]) + abs(answer_plus[1]) < abs(answer_minus[0]) + abs(
+            answer_minus[1]):
+        answer = answer_plus
+    else:
+        answer = answer_minus
+    return '{0} {1} {2}'.format(answer[0], answer[1], nod)
 
 
 def solution3(a, b, nod):  # Test 4 TL
+    x0 = int(nod / a)
+    if x0 < 0:
+        step = 1
+    else:
+        step = -1
     stop_plus = True
     stop_minus = True
     x = 0
-    min_sum = 10000
+    min_sum_p = min_sum_m = 10000
     answer_plus = answer_minus = [10000, 10000]
-    x0 = int(nod / a)
+
     x = x0
     x_increment = 0
     while stop_plus or stop_minus:
-        x = x0 + x_increment
-        y = (nod - a * x) / b
-        if int(y) == y:
-            if min_sum > abs(x) + abs(y):
-                min_sum = abs(x) + abs(y)
-                answer_plus = [x, int(y)]
-            else:
-                stop_plus = False
-        x = x0 - x_increment
-        y = (nod - a * x) / b
-        if int(y) == y:
-            if min_sum > abs(x) + abs(y):
-                min_sum = abs(x) + abs(y)
-                answer_minus = [x, int(y)]
-            else:
-                stop_minus = False
+        if stop_plus:
+            x = x0 + x_increment
+            y = (nod - a * x) / b
+            if int(y) == y:
+                if min_sum_p > abs(x) + abs(y):
+                    min_sum_p = abs(x) + abs(y)
+                    answer_plus = [x, int(y)]
+                    stop_plus = False
+                # else:
+                #     stop_plus = False
+        if stop_minus:
+            x = x0 - x_increment
+            y = (nod - a * x) / b
+            if int(y) == y:
+                if min_sum_m > abs(x) + abs(y):
+                    min_sum_m = abs(x) + abs(y)
+                    answer_minus = [x, int(y)]
+                    stop_minus = False
+                # else:
+                # stop_minus = False
         x_increment += 1
 
     if abs(answer_plus[0]) + abs(answer_plus[1]) < abs(answer_minus[0]) + abs(
@@ -62,7 +108,7 @@ def solution3(a, b, nod):  # Test 4 TL
     return '{0} {1} {2}'.format(answer[0], answer[1], nod)
 
 
-def solution2(a, b, nod):  # Test 10 WA
+def solution2(a, b, nod):  # Test 21 TL
     # a, b = b, a
     stop_plus = True
     stop_minus = True
@@ -98,6 +144,7 @@ def solution2(a, b, nod):  # Test 10 WA
 
 def solution(a, b, nod):  # Test 10 TL
     y0 = nod / b
+    x0 = nod / a
     x = 0
     stop_plus = True
     stop_minus = True
@@ -127,7 +174,7 @@ def solution(a, b, nod):  # Test 10 TL
                 answer = [-x, int(y_minus)]
                 min_sum_previous = min_sum
                 min_sum = abs(y_minus) + abs(x)
-    answer.sort()
+    # answer.sort()
     return '{0} {1} {2}'.format(answer[0], answer[1], nod)
 
 
@@ -145,14 +192,20 @@ def main(input_file):
     a = int(input_file[0])
     b = int(input_file[1])
     nod = solution_nod(a, b)
-    return solution3(a, b, nod)
-
+    sol2 = solution4(a, b, nod)
+    # sol2 = solution5(a, b, nod)
+    return '{0} {1} {2}'.format(sol2[1], sol2[2], sol2[0])
 
 if __name__ == '__main__':
-    input_txt = 'input.txt'
+    input_txt = 'input1.txt'
 
+    a = timeit.default_timer()
+    # codes
+    for i in range(100000):
+        x = main(input_txt)
+    print(timeit.default_timer() - a)
     with open('output.txt', 'w') as f:
-        f.write(str(main(input_txt)))
+        f.write(str(x))
 
     assert main('input1.txt') == '-1 1 4', 'input1.txt error\n' + str(
         main('input1.txt'))
