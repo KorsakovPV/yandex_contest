@@ -37,9 +37,9 @@ if __name__ == '__main__':
     with open('output.txt', 'w') as f:
         f.write(str(main(input_txt)))
 
-    assert main('input1.txt') == 3, 'input1.txt error\n' + str(
+    assert main('input1.txt') == '-1 1 4\n', 'input1.txt error\n' + str(
         main('input1.txt'))
-    assert main('input2.txt') == 1, 'input2.txt error\n' + str(
+    assert main('input2.txt') == '0 1 5\n', 'input2.txt error\n' + str(
         main('input2.txt'))
-    assert main('input3.txt') == 20, 'input3.txt error\n' + str(
+    assert main('input3.txt') == '-2 1 1\n', 'input3.txt error\n' + str(
         main('input3.txt'))
