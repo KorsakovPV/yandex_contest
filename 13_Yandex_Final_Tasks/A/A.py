@@ -69,10 +69,15 @@ A. Фотокопии
 вместимостью помещать в них по одной фотографии.
 """
 
-
+#34359507
 def solution(n, size_data_center):
-    return 0
-
+    size_data_center.sort(reverse=True)
+    amount = sum(size_data_center)
+    half_amount = amount // 2
+    if half_amount < size_data_center[0]:
+        return amount - size_data_center[0]
+    else:
+        return amount // 2
 
 
 def main(input_file):
@@ -80,7 +85,8 @@ def main(input_file):
         input_file = f.read().rstrip().split('\n')
     n = int(input_file[0])
     size_data_center = list(map(int, input_file[1].rstrip().split()))
-    return solution(n, size_data_center)
+    sol = solution(n, size_data_center)
+    return sol
 
 
 if __name__ == '__main__':

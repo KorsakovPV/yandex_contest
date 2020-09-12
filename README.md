@@ -8,9 +8,15 @@ https://contest.yandex.ru/contest/18338/problems/A/
 https://contest.yandex.ru/contest/18337/problems/A/
 
 Яндекс.Практикум, Python-разработчик: Спринт 12. Финальные задачи
-https://contest.yandex.ru/contest/18357/problems/?nc=SbtNaQkF
+https://contest.yandex.ru/contest/18357/problems/A/
 
 Яндекс.Практикум, Python-разработчик: Спринт 13, жадные алгоритмы
 https://contest.yandex.ru/contest/18360/problems/A/
+
+Яндекс.Практикум, Python-разработчик: Спринт 13, рекурсия
+https://contest.yandex.ru/contest/18359/problems/A/
+
+Яндекс.Практикум, Python-разработчик: Спринт 13. Финальные задачи
+https://contest.yandex.ru/contest/18358/problems/A/
 
 
