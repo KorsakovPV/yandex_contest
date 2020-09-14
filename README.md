@@ -19,3 +19,5 @@ https://contest.yandex.ru/contest/18359/problems/A/
 Яндекс.Практикум, Python-разработчик: Спринт 13. Финальные задачи
 https://contest.yandex.ru/contest/18358/problems/A/
 
+Яндекс.Практикум, Python-разработчик: Спринт 14. Сортировки.
+https://contest.yandex.ru/contest/18899/problems/A/

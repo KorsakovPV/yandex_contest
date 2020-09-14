@@ -54,7 +54,7 @@ def solution(data, target):
         m = (r + l) // 2
         if data[m] == target:
             return m
-        elif data[m] <= data[r]:
+        if data[m] <= data[r]:
             if target > data[m] and target <= data[r]:
                 l = m + 1
             else:
@@ -68,8 +68,7 @@ def solution(data, target):
 
 
 def main(input_file):
-    with open(input_file) as f:
-        input_file = f.read().rstrip().split('\n')
+    input_file = input_file.rstrip().split('\n')
     n = int(input_file[0])
     k = int(input_file[1])
     data = list(map(int, input_file[2].rstrip().split()))
@@ -78,14 +77,20 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    input_txt = 'input.txt'
-
+    with open('input.txt') as f:
+        input_file = f.read()
+    answer = str(main(input_file))
     with open('output.txt', 'w') as f:
-        f.write(str(main(input_txt)))
+        f.write(answer)
 
-    assert main('input1.txt') == 2, 'input1.txt error\n' + str(
-        main('input1.txt'))
-    assert main('input2.txt') == -1, 'input2.txt error\n' + str(
-        main('input2.txt'))
-    assert main('input3.txt') == 0, 'input3.txt error\n' + str(
-        main('input3.txt'))
+    with open('input1.txt') as f:
+        input_file = f.read()
+    assert main(input_file) == 2, 'input1.txt error\n' + str(main('input1.txt'))
+
+    with open('input2.txt') as f:
+        input_file = f.read()
+    assert main(input_file) == -1, 'input2.txt error\n' + str(main('input2.txt'))
+
+    with open('input3.txt') as f:
+        input_file = f.read()
+    assert main(input_file) == 0, 'input3.txt error\n' + str(main('input3.txt'))
