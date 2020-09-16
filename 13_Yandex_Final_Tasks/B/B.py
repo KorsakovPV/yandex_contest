@@ -46,8 +46,11 @@ n и k не превосходят 1000.
 стека вызовов функций, O(1).
 """
 
+from random import randrange
 
-#34378396
+
+
+# 34378396
 def solution(data, target):
     l, r = 0, len(data) - 1
     while l <= r:
@@ -72,6 +75,26 @@ def main(input_file):
     n = int(input_file[0])
     k = int(input_file[1])
     data = list(map(int, input_file[2].rstrip().split()))
+    # sol = 0
+    # sol2 = 0
+    # while sol == sol2:
+    #     data2 = [None] * 10
+    #     amount = 0
+    #     shift = randrange(18)
+    #     for i in range(10):
+    #         temp = randrange(10)
+    #         amount += temp + 1
+    #         data2[(i + shift) % 10] = amount
+    #     data = data2
+    #     n = 10
+    #     left = 0
+    #     right = n
+    #     for k in data:
+    #         sol = solution(data, k)
+    #         sol2 = search(data, left, right, k)
+    #         if sol != sol2:
+    #             print(data, sol, sol2, k)
+    #     print(1)
     sol = solution(data, k)
     return sol
 
@@ -85,12 +108,15 @@ if __name__ == '__main__':
 
     with open('input1.txt') as f:
         input_file = f.read()
-    assert main(input_file) == 2, 'input1.txt error\n' + str(main('input1.txt'))
+    assert main(input_file) == 2, 'input1.txt error\n' + str(
+        main('input1.txt'))
 
     with open('input2.txt') as f:
         input_file = f.read()
-    assert main(input_file) == -1, 'input2.txt error\n' + str(main('input2.txt'))
+    assert main(input_file) == -1, 'input2.txt error\n' + str(
+        main('input2.txt'))
 
     with open('input3.txt') as f:
         input_file = f.read()
-    assert main(input_file) == 0, 'input3.txt error\n' + str(main('input3.txt'))
+    assert main(input_file) == 0, 'input3.txt error\n' + str(
+        main('input3.txt'))
