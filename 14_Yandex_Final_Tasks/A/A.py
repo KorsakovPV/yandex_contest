@@ -15,7 +15,6 @@ A. Большое число
 
 
 def solution(n, data):
-    # for
     data.sort(reverse=True)
     return int(''.join(data))
 

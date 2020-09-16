@@ -1,36 +1,54 @@
 """
-C. Эффективная быстрая сортировка
+D. Тараканьи бега
 
-Рита захотела оптимизировать алгоритм быстрой сортировки. Алгоритму не должно
-требоваться O(n) дополнительной памяти. А у вас получится?
+Сегодня 31 апреля, и в Удотинске по традиции проводятся тараканьи бега. Забеги
+разделены на две категории. Если таракан участвовал в забеге одной из
+категорий, он не может принимать участие в забегах другой категории. Но
+встречаются нарушители! Помогите судьям их выявить и восстановить
+справедливость.
+
+Есть два списка со стартовыми номерами тараканов. Нужно вывести номера, которые
+встречаются и в первом, и во втором списке. Квадратичный алгоритм не подойдет
+для этой задачи. Тараканы разбегутся, пока алгоритм закончит работу.
 
 Формат ввода
-В первой строке на вход подается число n - длина массива. n не превосходит
-1000. Во второй строке через пробел записаны n чисел. Каждое из чисел по модулю
-не превосходит 1000.
+В первой строке записано число n - длина первого списка. Во второй строке -
+число m - длина второго списка. Оба числа не превосходят 10000 В следующих двух
+строках через пробел могут быть записаны два списка соответствующей длины,
+состоящие из чисел, не превосходящих 10000.
 
 Формат вывода
-Нужно вывести через пробел числа в отсортированном по возрастанию порядке.
-https://www.geeksforgeeks.org/python-program-for-quicksort/
+Нужно в строку вывести стартовые номера тараканов в порядке, в котором они
+встречались в первом списке.
 """
 
 
-def quicksort(array):
-    if len(array) < 2:
-        return array
-
-    else:
-        pivot = array[0]
-        less = [i for i in array[1:] if i <= pivot]
-        greater = [i for i in array[1:] if i > pivot]
-    return quicksort(less) + [pivot] + quicksort(greater)
+def solution(list_cockroach1, list_cockroach2):
+    set_cockroach1 = set(list_cockroach1)
+    set_cockroach2 = set(list_cockroach2)
+    answer = []
+    for i in list_cockroach1:
+        if i in set_cockroach1:
+            set_cockroach1.remove(i)
+            if i in list_cockroach2:
+                answer.append(i)
+    return answer
 
 
 def main(input_file):
     input_file = input_file.rstrip().split('\n')
-    n = int(input_file[0])
-    data = list(map(int, input_file[1].rstrip().split()))
-    sol = quicksort(data)
+    n = int(input_file[0])  # длинна первого списка
+    m = int(input_file[1])  # длинна второго списка
+    if n > 0:
+        list_cockroach1 = list(map(int, input_file[2].rstrip().split()))
+    else:
+        return ''
+        list_cockroach1 = []
+    if m > 0:
+        list_cockroach2 = list(map(int, input_file[3].rstrip().split()))
+    else:
+        list_cockroach2 = []
+    sol = solution(list_cockroach1, list_cockroach2)
     return ' '.join(map(str, sol))
 
 
@@ -44,13 +62,13 @@ if __name__ == '__main__':
     with open('input1.txt') as f:
         input_file = f.read()
     assert main(
-        input_file) == '-30 -30 -20 -12 -10 2 3 5 7 8 13 18 26 27', 'input1.txt error\n' + str(
+        input_file) == '4 9', 'input1.txt error\n' + str(
         main(input_file))
 
     with open('input2.txt') as f:
         input_file = f.read()
     assert main(
-        input_file) == '-19 -17 -16 -1 2 3 5 5 6 7 8 11 19 20 22', 'input2.txt error\n' + str(
+        input_file) == '7', 'input2.txt error\n' + str(
         main(input_file))
 
     # with open('input3.txt') as f:

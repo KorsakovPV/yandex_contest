@@ -90,10 +90,12 @@ def solution2(n, size_data_center):
         size_data_center[0] -= 1
         size_data_center[len(size_data_center) - 1] -= 1
         size_data_center.sort(reverse=True)
-        if size_data_center[len(size_data_center) - 1] == 0:
+        while size_data_center[len(size_data_center) - 1] == 0:
             size_data_center.pop()
-        if size_data_center[len(size_data_center) - 1] == 0:
-            size_data_center.pop()
+        # if size_data_center[len(size_data_center) - 1] == 0:
+        #     size_data_center.pop()
+        # if size_data_center[len(size_data_center) - 1] == 0:
+        #     size_data_center.pop()
         count += 1
     return int(count)
 
