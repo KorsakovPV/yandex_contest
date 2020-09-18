@@ -138,4 +138,4 @@ for i in range(4):
 
 solution_print(node_first)
 print()
-solution_print(solution(node_first, 0))
+solution_print(solution(node_first, 1))

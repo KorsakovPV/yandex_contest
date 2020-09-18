@@ -14,30 +14,34 @@ A. Большое число
 """
 
 
-def solution(n, data):
-    data.sort(reverse=True)
-    return int(''.join(data))
+class solution_key(str):
+    def __lt__(x, y):
+        return x + y > y + x
+
+
+class Solution:
+    def largest_number(self, nums):
+        nums.sort(key=solution_key)
+        return ''.join(nums)
 
 
 def main(input_file):
     input_file = input_file.rstrip().split('\n')
     n = int(input_file[0])
     data = input_file[1].rstrip().split()
-    sol = solution(n, data)
-    return str(sol)
+    sol = Solution()
+    return sol.largest_number(data)
 
 
-def test():
-    num = '998877665544332211'
-    data = list()
+def test(num):
     left = 1
-    right = 0
     while left < len(num) // 2:
         data = list()
-        data.append(num[0:left])
-        data.append(num[left:-left - 1])
-        data.append(num[-left: len(num)])
-        print(data, solution(3, data))
+        data.append(num[:left])
+        data.append(num[left:-left])
+        data.append(num[-left:])
+        sol = Solution()
+        print(data, sol.largest_number(data))
         left += 1
 
 
@@ -48,7 +52,8 @@ if __name__ == '__main__':
     with open('output.txt', 'w') as f:
         f.write(answer)
 
-    test()
+    # test('998877665544332211')
+    # test('11111111112')
 
     with open('input1.txt') as f:
         input_file = f.read()
