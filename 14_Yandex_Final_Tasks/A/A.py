@@ -14,20 +14,18 @@ A. Большое число
 """
 
 
+# 34601917
 class solution_key(str):
-    def __lt__(x, y):
-        return x + y > y + x
-
+    def __lt__(self, y):
+        return self + y > y + self
 
 class Solution:
     def largest_number(self, nums):
         nums.sort(key=solution_key)
         return ''.join(nums)
 
-
 def main(input_file):
     input_file = input_file.rstrip().split('\n')
-    n = int(input_file[0])
     data = input_file[1].rstrip().split()
     sol = Solution()
     return sol.largest_number(data)
@@ -52,6 +50,7 @@ if __name__ == '__main__':
     with open('output.txt', 'w') as f:
         f.write(answer)
 
+    # test('123456789')
     # test('998877665544332211')
     # test('11111111112')
 

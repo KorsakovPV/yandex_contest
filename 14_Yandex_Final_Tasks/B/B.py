@@ -13,28 +13,28 @@ A. Большое число
 Нужно вывести самое большое число, которое можно из них составить.
 """
 
-
+# 34647424
 class Solution:
     def bitwise_sorting(self, data):
         length = len(str(max(data)))
         rang = 10
         for i in range(length):
-            sort_data = [[] for k in range(rang)]
+            const =10 ** i
+            sort_data = [[] for _ in range(rang)]
             for item in data:
-                figure = item // 10 ** i % 10
+                figure = item // const % 10
                 sort_data[figure].append(item)
             data = []
             for index in range(rang):
                 data = data + sort_data[index]
-        return ' '.join(list(map(str, data)))
+        return data
 
 
 def main(input_file):
     input_file = input_file.rstrip().split('\n')
-    n = int(input_file[0])
     data = list(map(int, input_file[1].rstrip().split()))
     sol = Solution()
-    return sol.bitwise_sorting(data)
+    return ' '.join(list(map(str, sol.bitwise_sorting(data))))
 
 
 if __name__ == '__main__':
