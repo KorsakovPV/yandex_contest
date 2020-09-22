@@ -71,13 +71,13 @@ A. Фотокопии
 
 #34359507
 def solution(n, size_data_center):
-    size_data_center.sort(reverse=True)
+    max_size = max(size_data_center)
     amount = sum(size_data_center)
     half_amount = amount // 2
-    if half_amount < size_data_center[0]:
-        return amount - size_data_center[0]
+    if half_amount < max_size:
+        return amount - max_size
     else:
-        return amount // 2
+        return half_amount
 
 
 def main(input_file):

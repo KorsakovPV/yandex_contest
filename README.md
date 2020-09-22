@@ -24,3 +24,6 @@ https://contest.yandex.ru/contest/18899/problems/A/
 
 Яндекс.Практикум, Python-разработчик: Спринт 14. Финальные задачи.
 https://contest.yandex.ru/contest/18970/problems/A/
+
+Яндекс.Практикум, Python-разработчик: Спринт 15. Деревья.
+https://contest.yandex.ru/contest/18996/problems/A/

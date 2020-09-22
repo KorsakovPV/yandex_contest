@@ -30,18 +30,33 @@ L. Скобочная последовательность
 True или False.
 """
 
-f = open('input.txt')
-input_file = f.read().rstrip().split('\n')
-f.close()
-input_string = ''
-for i in input_file[0]:
-    if i in '({[]})':
-        input_string += i
+def is_balanced(text, brackets="()[]{}"):
+    opening, closing = brackets[::2], brackets[1::2]
+    stack = []
+    for character in text:
+        if character in opening:
+            stack.append(opening.index(character))
+        elif character in closing:
+            if stack and stack[-1] == closing.index(character):
+                stack.pop()
+            else:
+                return False
+    return (not stack)
+print(is_balanced(input()))
 
-# input_data = re.sub('[^a-z0-9]', '', input_file.lower().strip())
 
-output_file = str(input_string == input_string[::1])
-
-f = open('output.txt', 'w')
-f.write(output_file + '\n')
-f.close()
+# f = open('input.txt')
+# input_file = f.read().rstrip().split('\n')
+# f.close()
+# input_string = ''
+# for i in input_file[0]:
+#     if i in '({[]})':
+#         input_string += i
+#
+# # input_data = re.sub('[^a-z0-9]', '', input_file.lower().strip())
+#
+# output_file = str(input_string == input_string[::1])
+#
+# f = open('output.txt', 'w')
+# f.write(output_file + '\n')
+# f.close()

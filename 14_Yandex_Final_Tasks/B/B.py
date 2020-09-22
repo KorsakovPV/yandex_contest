@@ -13,13 +13,14 @@ A. Большое число
 Нужно вывести самое большое число, которое можно из них составить.
 """
 
+
 # 34647424
 class Solution:
     def bitwise_sorting(self, data):
         length = len(str(max(data)))
         rang = 10
         for i in range(length):
-            const =10 ** i
+            const = 10 ** i
             sort_data = [[] for _ in range(rang)]
             for item in data:
                 figure = item // const % 10

@@ -50,9 +50,9 @@ if __name__ == '__main__':
     with open('output.txt', 'w') as f:
         f.write(answer)
 
-    # test('123456789')
-    # test('998877665544332211')
-    # test('11111111112')
+    test('123456789')
+    test('998877665544332211')
+    test('11111111112')
 
     with open('input1.txt') as f:
         input_file = f.read()
