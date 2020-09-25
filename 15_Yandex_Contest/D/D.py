@@ -38,6 +38,7 @@ def solution(node):
     return True
 
 
+
 def main():
     return 0
 
@@ -50,4 +51,4 @@ if __name__ == '__main__':
     node03 = Node(2, node06, node07)
     node02 = Node(2, node04, node05)
     node01 = Node(1, node02, node03)
-    print(solution(node01))
+    print(solution(node02))

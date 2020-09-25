@@ -20,30 +20,21 @@ class Node:
         return self.value
 
 
-def solution(node):
-    if node.left is None and node.right is not None:
-        return False
-    elif node.left is not None and node.right is None:
-        return False
-    elif node.left is None and node.right is None:
+def height(root):
+    if root is None:
+        return 0
+    return max(height(root.left), height(root.right)) + 1
+
+
+def solution(root):
+    if root is None:
         return True
-    else:
-        return solution(node.left) and solution(node.right)
-
-
-# def test():
-#     assert solution(node01) == False, 'node01 error ' + str(solution(node01))
-#     assert solution(node02) == False, 'node02 error ' + str(solution(node02))
-#     assert solution(node03) == True, 'node03 error ' + str(solution(node03))
-#     assert solution(node04) == True, 'node04 error ' + str(solution(node04))
-#     assert solution(node05) == False, 'node05 error ' + str(solution(node05))
-#     assert solution(node06) == True, 'node06 error ' + str(solution(node06))
-#     assert solution(node07) == True, 'node07 error ' + str(solution(node07))
-#     assert solution(node08) == True, 'node08 error ' + str(solution(node08))
-#     assert solution(node09) == True, 'node09 error ' + str(solution(node09))
-#     assert solution(node10) == True, 'node10 error ' + str(solution(node10))
-#     assert solution(node11) == True, 'node11 error ' + str(solution(node11))
-#     assert solution(node12) == True, 'node12 error ' + str(solution(node12))
+    lh = height(root.left)
+    rh = height(root.right)
+    if (abs(lh - rh) <= 1) and solution(root.left) is True and solution(
+            root.right) is True:
+        return True
+    return False
 
 
 def main():
@@ -64,6 +55,5 @@ if __name__ == '__main__':
     node02 = Node(3, node04, node05)
     node01 = Node(1, node02, node03)
 
-    print(solution(node03))
-
-    # test()
+    print(height(node01))
+    print(solution(node01))
