@@ -1,17 +1,14 @@
+def mirror_tree(a, b):
+    if a is None and b is None:
+        return True
+    if a and b:
+        return (
+                a.value == b.value and
+                mirror_tree(a.left, b.right) and
+                mirror_tree(a.right, b.left)
+        )
+    return False
 def solution(node):
-    def func1(node, answer=[], index=0):
-        if len(answer) - 1 < index:
-            answer.append([])
-        answer[index] += [node.value]
-        index += 1
-        if node.left is not None:
-            func1(node.left, answer, index)
-        if node.right is not None:
-            func1(node.right, answer, index)
-        return answer
-
-    for level in func1(node, answer=[], index=0):
-        for i in range(len(level) // 2):
-            if level[i] != level[-i - 1]:
-                return False
-    return True
+    a = node.left
+    b = node.right
+    return mirror_tree(a, b)

@@ -19,7 +19,7 @@ class Node:
         return self.value
 
 
-def solution(node):
+def solution1(node):
     def func1(node, answer=[], index=0):
         if len(answer) - 1 < index:
             answer.append([])
@@ -37,7 +37,20 @@ def solution(node):
                 return False
     return True
 
-
+def mirror_tree(a, b):
+    if a is None and b is None:
+        return True
+    if a and b:
+        return (
+                a.value == b.value and
+                mirror_tree(a.left, b.right) and
+                mirror_tree(a.right, b.left)
+        )
+    return False
+def solution(node):
+    a = node.left
+    b = node.right
+    return mirror_tree(a, b)
 
 def main():
     return 0
@@ -45,10 +58,20 @@ def main():
 
 if __name__ == '__main__':
     node07 = Node(4)
-    node06 = Node(4)
-    node05 = Node(4)
+    node06 = Node(3)
+    node05 = Node(3)
     node04 = Node(4)
     node03 = Node(2, node06, node07)
     node02 = Node(2, node04, node05)
     node01 = Node(1, node02, node03)
-    print(solution(node02))
+    x = node01
+    print(solution(x))
+    print(solution1(x))
+
+# if __name__ == "__main__":
+#     root = Node(15)
+#     root.left = Node(19)
+#     root.right = Node(19)
+#     root.left.left = Node(11)
+#     root.left.right = Node(11)
+#     print(solution(root))
