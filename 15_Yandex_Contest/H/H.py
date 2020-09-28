@@ -18,7 +18,7 @@ n не превосходит 10000.
 Формат вывода
 Выведите k - ую минимальную разницу между парами значений треш - индексов.
 
-
+https://medium.com/swlh/binary-search-find-k-th-smallest-pair-distance-91cce923c273
 """
 
 from typing import List

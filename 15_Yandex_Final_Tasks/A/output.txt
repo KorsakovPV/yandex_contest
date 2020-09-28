@@ -1,0 +1,3 @@
+kondratiy 1 9 5 0 -1
+sam 1 9 5 0 1
+anna 1 -4 5 0 1

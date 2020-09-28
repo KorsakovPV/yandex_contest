@@ -1,13 +1,10 @@
 """
-J. Максимальная глубина
+C. Генеалогическое древо
 
-Евлампия хочет побывать во многих городах Трешландии. Она составила карту.
-Карта представлена в виде дерева. Корень дерева обозначает Удотинск.
-Узлы - другие города. Листья обозначают населенные пункты, в которые Евлампия
-хочет попасть.
-Помогите Евлампии определить максимальное число городов, через которое ей нужно
-проехать для совершения одной поездки от Удотинска до места назначения, включая
-начальный и конечный пункты.
+Гуляя по вилле Кондратия, ребята нашли генеалогическое древо его семьи. Им
+стало интересно, сколько лет прожили члены семьи разных поколений.
+
+Помогите ребятам это выяснить.
 """
 
 
@@ -21,16 +18,16 @@ class Node:
         return self.value
 
 
-def solution(node, index=0):
-    index += 1
+def solution(node, numeral=0, amount=0):
+    numeral = numeral * 10 + node.value
     if node.left is None and node.right is None:
-        return index
+        return amount + numeral
     elif node.left is None:
-        return max(index, solution(node.right, index))
+        return solution(node.right, numeral, amount)
     elif node.right is None:
-        return max(index, solution(node.left, index))
+        return solution(node.left, numeral, amount)
     else:
-        return max(index, solution(node.left, index), solution(node.right, index))
+        return solution(node.left, numeral, amount)+solution(node.right, numeral, amount)
 
 
 # def test():
@@ -53,15 +50,15 @@ def main():
 
 
 if __name__ == '__main__':
-    node13 = Node(10)
+    node13 = Node(9)
     node12 = Node(1, node13)
     node11 = Node(0)
     node10 = Node(3)
-    node09 = Node(15)
-    node08 = Node(14)
+    node09 = Node(5)
+    node08 = Node(4)
     node07 = Node(6, node11, node12)
-    node06 = Node(-2)
-    node05 = Node(10, node10)
+    node06 = Node(2)
+    node05 = Node(9, node10)
     node04 = Node(8, node08, node09)
     node03 = Node(5, node06, node07)
     node02 = Node(3, node04, node05)
@@ -69,4 +66,4 @@ if __name__ == '__main__':
 
     print(solution(node01))
 
-    # test()
+
