@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2415948e-69cd-453b-ae67-635877d23b14" name="Default Changelist" comment="29/09/20 Sprint 15 Final A" />
+    <list default="true" id="2415948e-69cd-453b-ae67-635877d23b14" name="Default Changelist" comment="29/09/20 Sprint 15 Final A">
+      <change afterPath="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/A_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/A.py" beforeDir="false" afterPath="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/output.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +61,7 @@
       <recent name="$PROJECT_DIR$/13_Yandex_Contest/A" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.A">
+  <component name="RunManager" selected="Python.A_v1">
     <configuration name="A (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yandex_contest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,12 +116,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="A_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yandex_contest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/A_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.A" />
       <item itemvalue="Python.A (1)" />
+      <item itemvalue="Python.A" />
+      <item itemvalue="Python.A_v1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.A_v1" />
         <item itemvalue="Python.A" />
         <item itemvalue="Python.A (1)" />
       </list>
@@ -174,7 +204,9 @@
       <workItem from="1601104117362" duration="2011000" />
       <workItem from="1601136332226" duration="8221000" />
       <workItem from="1601216718034" duration="8068000" />
-      <workItem from="1601302865507" duration="2790000" />
+      <workItem from="1601302865507" duration="3130000" />
+      <workItem from="1601485624348" duration="2113000" />
+      <workItem from="1601649786159" duration="13586000" />
     </task>
     <task id="LOCAL-00001" summary="29/08/20 Sprint 13 Tast A">
       <created>1598697804614</created>
@@ -302,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601314518910</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="29/09/20 Sprint 15 Final A">
+      <created>1601314684292</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1601314684292</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,49 +398,49 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601224114577" />
-    <state width="1878" height="238" key="GridCell.Tab.0.bottom" timestamp="1601312713115">
+    <state width="1878" height="238" key="GridCell.Tab.0.bottom" timestamp="1601665884424">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600493382525" />
-    <state width="1878" height="238" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312713115" />
+    <state width="1878" height="238" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601665884424" />
     <state width="1324" height="188" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963867712" />
-    <state width="1878" height="238" key="GridCell.Tab.0.center" timestamp="1601312713115">
+    <state width="1878" height="238" key="GridCell.Tab.0.center" timestamp="1601665884424">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600493382524" />
-    <state width="1878" height="238" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312713115" />
+    <state width="1878" height="238" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601665884424" />
     <state width="1324" height="188" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963867711" />
-    <state width="1878" height="238" key="GridCell.Tab.0.left" timestamp="1601312713114">
+    <state width="1878" height="238" key="GridCell.Tab.0.left" timestamp="1601665884424">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600493382524" />
-    <state width="1878" height="238" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312713114" />
+    <state width="1878" height="238" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601665884424" />
     <state width="1324" height="188" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963867711" />
-    <state width="1878" height="238" key="GridCell.Tab.0.right" timestamp="1601312713115">
+    <state width="1878" height="238" key="GridCell.Tab.0.right" timestamp="1601665884424">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600493382524" />
-    <state width="1878" height="238" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312713115" />
+    <state width="1878" height="238" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601665884424" />
     <state width="1324" height="188" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963867711" />
-    <state width="1878" height="333" key="GridCell.Tab.1.bottom" timestamp="1601312563983">
+    <state width="1878" height="333" key="GridCell.Tab.1.bottom" timestamp="1601664901747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.1.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312563983" />
+    <state width="1878" height="333" key="GridCell.Tab.1.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601664901747" />
     <state width="1324" height="188" key="GridCell.Tab.1.bottom/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963868394" />
-    <state width="1878" height="333" key="GridCell.Tab.1.center" timestamp="1601312563982">
+    <state width="1878" height="333" key="GridCell.Tab.1.center" timestamp="1601664901746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.1.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312563982" />
+    <state width="1878" height="333" key="GridCell.Tab.1.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601664901746" />
     <state width="1324" height="188" key="GridCell.Tab.1.center/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963868394" />
-    <state width="1878" height="333" key="GridCell.Tab.1.left" timestamp="1601312563982">
+    <state width="1878" height="333" key="GridCell.Tab.1.left" timestamp="1601664901746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.1.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312563982" />
+    <state width="1878" height="333" key="GridCell.Tab.1.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601664901746" />
     <state width="1324" height="188" key="GridCell.Tab.1.left/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963868394" />
-    <state width="1878" height="333" key="GridCell.Tab.1.right" timestamp="1601312563983">
+    <state width="1878" height="333" key="GridCell.Tab.1.right" timestamp="1601664901747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="333" key="GridCell.Tab.1.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601312563983" />
+    <state width="1878" height="333" key="GridCell.Tab.1.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601664901747" />
     <state width="1324" height="188" key="GridCell.Tab.1.right/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1600963868394" />
     <state x="670" y="245" width="569" height="583" key="RollbackChangesDialog" timestamp="1598454976692">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -411,10 +450,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="174" key="SettingsEditor/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598790691950" />
-    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1601314540877">
+    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1601314774485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601314540877" />
+    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601314774485" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1598842238293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -439,6 +478,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="238" width="672" height="678" key="search.everywhere.popup/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1599758988220" />
+    <state x="685" y="434" width="540" height="205" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601314584308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="685" y="434" width="540" height="205" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601314584308" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,6 +697,11 @@
           <line>21</line>
           <option name="timeStamp" value="285" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/15_Yandex_Final_Tasks/A/A_v1.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -666,11 +714,15 @@
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="list(map(int, temp[1:]))" language="Python" />
+        <watch expression="riders1.pop()[3]" language="Python" />
+        <watch expression="sum(i for i in points if i &gt; 0)" language="Python" />
+        <watch expression="riders1+riders2" language="Python" />
+        <watch expression="answer_str + item" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/yandex_contest$A.coverage" NAME="A Coverage Results" MODIFIED="1601312708515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
+    <SUITE FILE_PATH="coverage/yandex_contest$A.coverage" NAME="A Coverage Results" MODIFIED="1601655098747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
     <SUITE FILE_PATH="coverage/yandex_contest$G.coverage" NAME="G Coverage Results" MODIFIED="1601099450256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/G" />
     <SUITE FILE_PATH="coverage/yandex_contest$J.coverage" NAME="J Coverage Results" MODIFIED="1601141559312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/J" />
     <SUITE FILE_PATH="coverage/yandex_contest$I_v3.coverage" NAME="I_v3 Coverage Results" MODIFIED="1600008153039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 1/I" />
@@ -692,7 +744,7 @@
     <SUITE FILE_PATH="coverage/yandex_contest$A__1_.coverage" NAME="A (1) Coverage Results" MODIFIED="1601224458891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 1/A" />
     <SUITE FILE_PATH="coverage/yandex_contest$C_v1.coverage" NAME="C_v1 Coverage Results" MODIFIED="1598957225857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/C" />
     <SUITE FILE_PATH="coverage/yandex_contest$B_v1.coverage" NAME="B_v1 Coverage Results" MODIFIED="1599574519574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/B" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A_v1.coverage" NAME="A_v1 Coverage Results" MODIFIED="1600093956925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Final_Tasks/A" />
+    <SUITE FILE_PATH="coverage/yandex_contest$A_v1.coverage" NAME="A_v1 Coverage Results" MODIFIED="1601665884408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
     <SUITE FILE_PATH="coverage/yandex_contest$Q.coverage" NAME="Q Coverage Results" MODIFIED="1599104229692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 2/Q" />
     <SUITE FILE_PATH="coverage/yandex_contest$H.coverage" NAME="H Coverage Results" MODIFIED="1601137156454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/H" />
     <SUITE FILE_PATH="coverage/yandex_contest$G_v1.coverage" NAME="G_v1 Coverage Results" MODIFIED="1599666530302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/G" />

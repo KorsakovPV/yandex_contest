@@ -36,38 +36,51 @@ A. Кондратиева пирамида
 import heapq
 
 
-def amount_point(points):
-    answer_amount = 0
-    for point in points:
-        if point > 0:
-            answer_amount += point
-    return answer_amount
+class participant_of_race:
+    def __init__(self, index_number, riders_name_point_str):
+        temp = riders_name_point_str.split()
+        self.amount_positive_point = sum(
+            i for i in list(map(int, temp[1:])) if i > 0)
+        self.name = temp[0]
+        self.index_number = index_number
+        self.text_value = riders_name_point_str
+        self.detect_kondratiy = set('kondratiy') <= set(self.name)
+
+    def __str__(self):
+        return self.text_value
+
+    def __lt__(self, other):
+        if self.amount_positive_point > other.amount_positive_point:
+            return True
+        if self.amount_positive_point == other.amount_positive_point:
+            if self.name < other.name:
+                return True
+            if self.name == other.name:
+                if self.index_number < other.index_number:
+                    return True
+        return False
 
 
-def detect_kondratiy(name):
-    return set('kondratiy') <= set(name)
+def sorting_riders(riders_list):
+    riders1 = list()
+    riders2 = list()
+    while len(riders_list) > 0:
+        item = riders_list.pop()
+        if item.detect_kondratiy:
+            riders1.append(item)
+        else:
+            heapq.heappush(riders2, item)
+    return riders1 + riders2
 
 
 def main(input_str):
     input_str = input_str.rstrip().split('\n')
-    n = int(input_str[0])
-    riders1 = list()
-    riders2 = list()
-    for i in range(1, n + 1):
-        temp = input_str[i].split()
-        name = temp[0]
-        points = list(map(int, temp[1:]))
-        if detect_kondratiy(name):
-            riders1.append(
-                [-amount_point(points), name, - i, input_str[i]])
-        else:
-            heapq.heappush(riders2,
-                           [-amount_point(points), name, - i, input_str[i]])
+    riders_list = list()
+    for i, item in enumerate(input_str[1:]):
+        riders_list.append(participant_of_race(i, item))
     answer_str = ''
-    while len(riders1) > 0:
-        answer_str += riders1.pop()[3] + '\n'
-    while len(riders2) > 0:
-        answer_str += heapq.heappop(riders2)[3] + '\n'
+    for item in sorting_riders(riders_list):
+        answer_str += str(item) + '\n'
     return answer_str
 
 
