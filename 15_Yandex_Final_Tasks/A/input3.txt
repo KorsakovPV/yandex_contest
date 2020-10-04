@@ -1,0 +1,8 @@
+7
+name 1 -4 5 0 1
+aname 1 9 5 0 1
+namekondratiyqq -1 -4 -5 -1
+namekondratiyqq -1 -4 -5 -1
+name 1 -4 5 0 1
+zaname 1 9 5 0 1
+kondratiy 1 9 5 0 1
