@@ -41,19 +41,20 @@ class ParticipantOfRace:
                  index_number,
                  amount_positive_point,
                  name,
-                 text_value,
+                 score,
                  is_kondratiy):
         self.amount_positive_point = amount_positive_point
         self.name = name
         self.index_number = index_number
-        self.text_value = text_value
+        self.score: list = score
         self.is_kondratiy = is_kondratiy
 
     @classmethod
     def from_string(cls, index_number, riders_name_point_str):
         temp = riders_name_point_str.split()
+        score = list(map(int, temp[1:]))
         amount_positive_point = sum(
-            i for i in list(map(int, temp[1:])) if i > 0)
+            i for i in score if i > 0)
         name = temp[0]
         index_number = index_number
         text_value = riders_name_point_str
@@ -61,12 +62,12 @@ class ParticipantOfRace:
         new_rider = cls(index_number,
                    amount_positive_point,
                    name,
-                   text_value,
+                   score,
                    is_kondratiy)
         return new_rider
 
     def __str__(self):
-        return self.text_value
+        return f'{self.name} {" ".join(str(num) for num in self.score)}'
 
     def __lt__(self, other):
         if self.amount_positive_point > other.amount_positive_point:

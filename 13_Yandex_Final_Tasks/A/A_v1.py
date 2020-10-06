@@ -132,12 +132,34 @@ def solution4(n, arr):
             left += 1
     return count
 
+def solution5(n, value):
+    lst = value
+    lst.sort(reverse=True)
+    cnt = 0
+    while True:
+        while lst[len(lst)-1] == 0:
+            lst.pop()
+            if len(lst) <= 1:
+                break
+        # if lst[0] <= 0:
+        #     lst.pop(0)
+        # if lst[0] <= 0:
+        #     lst.pop(0)
+        if len(lst) <= 1:
+            break
+        if lst[-1] <= 0:
+            lst.pop()
+        lst[-1] -= 1
+        cnt += 1
+        lst[0] -= 1
+        lst.sort(reverse=True)
+    return cnt
 
 def main(input_file):
     input_file = input_file.rstrip().split('\n')
     n = int(input_file[0])
     size_data_center = list(map(int, input_file[1].rstrip().split()))
-    sol = solution4(n, size_data_center)
+    sol = solution5(n, size_data_center)
     return sol
 
 
