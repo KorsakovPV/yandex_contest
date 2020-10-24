@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2415948e-69cd-453b-ae67-635877d23b14" name="Default Changelist" comment="05/10/20 Sprint 15 Final A">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Yandex_Final_Tasks/A/A_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/13_Yandex_Final_Tasks/A/A_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Yandex_Final_Tasks/B/B.py" beforeDir="false" afterPath="$PROJECT_DIR$/14_Yandex_Final_Tasks/B/B.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dev/hw05_final" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,7 +59,29 @@
       <recent name="$PROJECT_DIR$/13_Yandex_Contest/A" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.A_v1">
+    <configuration name="A (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yandex_contest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/A.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="A" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yandex_contest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,8 +104,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="A_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yandex_contest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/13_Yandex_Final_Tasks/A" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/13_Yandex_Final_Tasks/A/A_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kulik" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yandex_contest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15_Yandex_Final_Tasks/A/kulik.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.A_v1" />
+        <item itemvalue="Python.kulik" />
+        <item itemvalue="Python.A (1)" />
         <item itemvalue="Python.A" />
       </list>
     </recent_temporary>
@@ -149,7 +220,10 @@
       <workItem from="1601869620701" duration="19000" />
       <workItem from="1601870761081" duration="41000" />
       <workItem from="1601904631240" duration="10059000" />
-      <workItem from="1601997690021" duration="5489000" />
+      <workItem from="1601997690021" duration="7833000" />
+      <workItem from="1602873545799" duration="4026000" />
+      <workItem from="1603221225445" duration="53000" />
+      <workItem from="1603549537822" duration="4027000" />
     </task>
     <task id="LOCAL-00001" summary="29/08/20 Sprint 13 Tast A">
       <created>1598697804614</created>
@@ -298,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601836017078</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="05/10/20 Sprint 15 Final A">
+      <created>1602003906909</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602003906909</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,53 +434,57 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="622" height="465" key="DebuggerActiveHint/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601911880907" />
-    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1601916535940">
+    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1603221275157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601916535940" />
-    <state width="1878" height="342" key="GridCell.Tab.0.bottom" timestamp="1602003235125">
+    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1603221275157" />
+    <state width="1878" height="342" key="GridCell.Tab.0.bottom" timestamp="1603565176099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600493382525" />
-    <state width="1878" height="342" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602003235125" />
+    <state width="1878" height="342" key="GridCell.Tab.0.bottom/0.0.3286.1040@0.0.3286.1040" timestamp="1602876770713" />
+    <state width="1878" height="342" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1603565176099" />
     <state width="1324" height="201" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829730677" />
-    <state width="1878" height="342" key="GridCell.Tab.0.center" timestamp="1602003235124">
+    <state width="1878" height="342" key="GridCell.Tab.0.center" timestamp="1603565176099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600493382524" />
-    <state width="1878" height="342" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602003235124" />
+    <state width="1878" height="342" key="GridCell.Tab.0.center/0.0.3286.1040@0.0.3286.1040" timestamp="1602876770712" />
+    <state width="1878" height="342" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1603565176099" />
     <state width="1324" height="201" key="GridCell.Tab.0.center/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829730677" />
-    <state width="1878" height="342" key="GridCell.Tab.0.left" timestamp="1602003235124">
+    <state width="1878" height="342" key="GridCell.Tab.0.left" timestamp="1603565176099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600493382524" />
-    <state width="1878" height="342" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602003235124" />
+    <state width="1878" height="342" key="GridCell.Tab.0.left/0.0.3286.1040@0.0.3286.1040" timestamp="1602876770712" />
+    <state width="1878" height="342" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1603565176099" />
     <state width="1324" height="201" key="GridCell.Tab.0.left/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829730677" />
-    <state width="1878" height="342" key="GridCell.Tab.0.right" timestamp="1602003235125">
+    <state width="1878" height="342" key="GridCell.Tab.0.right" timestamp="1603565176099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600493382524" />
-    <state width="1878" height="342" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602003235125" />
+    <state width="1878" height="342" key="GridCell.Tab.0.right/0.0.3286.1040@0.0.3286.1040" timestamp="1602876770713" />
+    <state width="1878" height="342" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1603565176099" />
     <state width="1324" height="201" key="GridCell.Tab.0.right/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829730677" />
-    <state width="1878" height="338" key="GridCell.Tab.1.bottom" timestamp="1602002626462">
+    <state width="1878" height="338" key="GridCell.Tab.1.bottom" timestamp="1602006218193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="338" key="GridCell.Tab.1.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602002626462" />
+    <state width="1878" height="338" key="GridCell.Tab.1.bottom/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602006218193" />
     <state width="1324" height="201" key="GridCell.Tab.1.bottom/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829731359" />
-    <state width="1878" height="338" key="GridCell.Tab.1.center" timestamp="1602002626462">
+    <state width="1878" height="338" key="GridCell.Tab.1.center" timestamp="1602006218193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="338" key="GridCell.Tab.1.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602002626462" />
+    <state width="1878" height="338" key="GridCell.Tab.1.center/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602006218193" />
     <state width="1324" height="201" key="GridCell.Tab.1.center/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829731359" />
-    <state width="1878" height="338" key="GridCell.Tab.1.left" timestamp="1602002626462">
+    <state width="1878" height="338" key="GridCell.Tab.1.left" timestamp="1602006218193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="338" key="GridCell.Tab.1.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602002626462" />
+    <state width="1878" height="338" key="GridCell.Tab.1.left/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602006218193" />
     <state width="1324" height="201" key="GridCell.Tab.1.left/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829731359" />
-    <state width="1878" height="338" key="GridCell.Tab.1.right" timestamp="1602002626462">
+    <state width="1878" height="338" key="GridCell.Tab.1.right" timestamp="1602006218193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="338" key="GridCell.Tab.1.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602002626462" />
+    <state width="1878" height="338" key="GridCell.Tab.1.right/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602006218193" />
     <state width="1324" height="201" key="GridCell.Tab.1.right/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601829731359" />
     <state x="670" y="245" width="569" height="583" key="RollbackChangesDialog" timestamp="1598454976692">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -409,10 +494,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="174" key="SettingsEditor/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1598790691950" />
-    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1601836032649">
+    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1602006161467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1601836032649" />
+    <state x="555" y="275" width="800" height="523" key="Vcs.Push.Dialog.v2/1920.312.1366.768/0.0.1920.1040@0.0.1920.1040" timestamp="1602006161467" />
     <state x="2315" y="515" key="Vcs.Push.Dialog.v2/1920.312.1366.768/0.0.1920.1040@1920.312.1366.768" timestamp="1601667344725" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1598842238293">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -668,11 +753,6 @@
           <option name="timeStamp" value="288" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/13_Yandex_Final_Tasks/A/A_v1.py</url>
-          <line>139</line>
-          <option name="timeStamp" value="291" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/16_Yandex_Contest/A/A.py</url>
           <line>40</line>
           <option name="timeStamp" value="300" />
@@ -694,48 +774,8 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/yandex_contest$A.coverage" NAME="A Coverage Results" MODIFIED="1602003235102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/16_Yandex_Contest/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$G.coverage" NAME="G Coverage Results" MODIFIED="1601099450256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/G" />
-    <SUITE FILE_PATH="coverage/yandex_contest$J.coverage" NAME="J Coverage Results" MODIFIED="1601141559312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/J" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A_vladimir.coverage" NAME="A_vladimir Coverage Results" MODIFIED="1601905680019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$I_v3.coverage" NAME="I_v3 Coverage Results" MODIFIED="1600008153039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 1/I" />
-    <SUITE FILE_PATH="coverage/yandex_contest$M__1_.coverage" NAME="M (1) Coverage Results" MODIFIED="1599759660914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/M" />
-    <SUITE FILE_PATH="coverage/yandex_contest$D.coverage" NAME="D Coverage Results" MODIFIED="1601097894805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/D" />
-    <SUITE FILE_PATH="coverage/yandex_contest$N_v1.coverage" NAME="N_v1 Coverage Results" MODIFIED="1599850532301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/N" />
-    <SUITE FILE_PATH="coverage/yandex_contest$F__1_.coverage" NAME="F (1) Coverage Results" MODIFIED="1600352267299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 2/F" />
-    <SUITE FILE_PATH="coverage/yandex_contest$I_v3_.coverage" NAME="I_v3_Владимир Coverage Results" MODIFIED="1599393643391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/I" />
-    <SUITE FILE_PATH="coverage/yandex_contest$L_Vladimir.coverage" NAME="L_Vladimir Coverage Results" MODIFIED="1599664413374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 1/L" />
-    <SUITE FILE_PATH="coverage/yandex_contest$O.coverage" NAME="O Coverage Results" MODIFIED="1598809820773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 2/O" />
-    <SUITE FILE_PATH="coverage/yandex_contest$L.coverage" NAME="L Coverage Results" MODIFIED="1600769075970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 2/L" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A__3_.coverage" NAME="A (3) Coverage Results" MODIFIED="1598697566917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/А" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A_v3.coverage" NAME="A_v3 Coverage Results" MODIFIED="1601910848440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$D_vladilir.coverage" NAME="D_vladilir Coverage Results" MODIFIED="1599127518276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/D" />
-    <SUITE FILE_PATH="coverage/yandex_contest$xxxx.coverage" NAME="xxxx Coverage Results" MODIFIED="1601091995857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/G" />
-    <SUITE FILE_PATH="coverage/yandex_contest$B.coverage" NAME="B Coverage Results" MODIFIED="1600966016299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/B" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A_v1__1_.coverage" NAME="A_v1 (1) Coverage Results" MODIFIED="1601916485144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Final_Tasks/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$I_v2.coverage" NAME="I_v2 Coverage Results" MODIFIED="1599111764876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/I" />
-    <SUITE FILE_PATH="coverage/yandex_contest$B__1_.coverage" NAME="B (1) Coverage Results" MODIFIED="1600781759370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/B" />
-    <SUITE FILE_PATH="coverage/yandex_contest$Dddd.coverage" NAME="Dddd Coverage Results" MODIFIED="1598958936600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/D" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A__1_.coverage" NAME="A (1) Coverage Results" MODIFIED="1601224458891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 1/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$C_v1.coverage" NAME="C_v1 Coverage Results" MODIFIED="1598957225857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/C" />
-    <SUITE FILE_PATH="coverage/yandex_contest$B_v1.coverage" NAME="B_v1 Coverage Results" MODIFIED="1599574519574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/B" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A_v1.coverage" NAME="A_v1 Coverage Results" MODIFIED="1601920869914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Final_Tasks/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$Q.coverage" NAME="Q Coverage Results" MODIFIED="1599104229692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 2/Q" />
-    <SUITE FILE_PATH="coverage/yandex_contest$H.coverage" NAME="H Coverage Results" MODIFIED="1601137156454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/H" />
-    <SUITE FILE_PATH="coverage/yandex_contest$G_v1.coverage" NAME="G_v1 Coverage Results" MODIFIED="1599666530302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/G" />
-    <SUITE FILE_PATH="coverage/yandex_contest$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1600612658709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/14_Yandex_Final_Tasks/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$I.coverage" NAME="I Coverage Results" MODIFIED="1601140932187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/I" />
-    <SUITE FILE_PATH="coverage/yandex_contest$I_v4.coverage" NAME="I_v4 Coverage Results" MODIFIED="1600010099799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 1/I" />
-    <SUITE FILE_PATH="coverage/yandex_contest$E.coverage" NAME="E Coverage Results" MODIFIED="1600874588073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/E" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A__2_.coverage" NAME="A (2) Coverage Results" MODIFIED="1598799379791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Final_Tasks/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$I_v1.coverage" NAME="I_v1 Coverage Results" MODIFIED="1599106360649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/I" />
-    <SUITE FILE_PATH="coverage/yandex_contest$J_v1.coverage" NAME="J_v1 Coverage Results" MODIFIED="1599674008569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/J" />
-    <SUITE FILE_PATH="coverage/yandex_contest$F.coverage" NAME="F Coverage Results" MODIFIED="1600881132510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/F" />
-    <SUITE FILE_PATH="coverage/yandex_contest$N.coverage" NAME="N Coverage Results" MODIFIED="1599852266732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest 2/N" />
-    <SUITE FILE_PATH="coverage/yandex_contest$K.coverage" NAME="K Coverage Results" MODIFIED="1601143649632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/K" />
-    <SUITE FILE_PATH="coverage/yandex_contest$Q_.coverage" NAME="Q_Карен Coverage Results" MODIFIED="1599104744271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/12_Yandex_Contest 1/Q" />
-    <SUITE FILE_PATH="coverage/yandex_contest$A_v2.coverage" NAME="A_v2 Coverage Results" MODIFIED="1601908133846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
-    <SUITE FILE_PATH="coverage/yandex_contest$K_v1.coverage" NAME="K_v1 Coverage Results" MODIFIED="1599395676656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Contest/K" />
-    <SUITE FILE_PATH="coverage/yandex_contest$C.coverage" NAME="C Coverage Results" MODIFIED="1600967887888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Contest/C" />
+    <SUITE FILE_PATH="coverage/yandex_contest$A_v1.coverage" NAME="A_v1 Coverage Results" MODIFIED="1603560731559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/13_Yandex_Final_Tasks/A" />
+    <SUITE FILE_PATH="coverage/yandex_contest$A__1_.coverage" NAME="A (1) Coverage Results" MODIFIED="1602875655483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
+    <SUITE FILE_PATH="coverage/yandex_contest$kulik.coverage" NAME="kulik Coverage Results" MODIFIED="1602876770688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_Yandex_Final_Tasks/A" />
   </component>
 </project>

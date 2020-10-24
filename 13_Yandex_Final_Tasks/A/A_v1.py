@@ -81,6 +81,7 @@ def solution(n, size_data_center):
     else:
         return half_amount
 
+
 # 34442276
 # O(n*n log n) O(n^2)
 def solution2(n, size_data_center):
@@ -90,33 +91,17 @@ def solution2(n, size_data_center):
         size_data_center[0] -= 1
         size_data_center[len(size_data_center) - 1] -= 1
         size_data_center.sort(reverse=True)
-        while size_data_center[len(size_data_center) - 1] == 0:
-            size_data_center.pop()
-        # if size_data_center[len(size_data_center) - 1] == 0:
+        # while size_data_center[len(size_data_center) - 1] == 0:
         #     size_data_center.pop()
-        # if size_data_center[len(size_data_center) - 1] == 0:
-        #     size_data_center.pop()
-        count += 1
-    return int(count)
-
-#
-def solution3(n, size_data_center):
-    max_size = sum(size_data_center)
-    size_data_center.sort(reverse=True)
-    count = 0
-    while len(size_data_center) > 1 or max_size < count:
-        if len(size_data_center) <= 4:
-            size_data_center.sort(reverse=True)
-        size_data_center[0] -= 1
-        size_data_center[len(size_data_center) - 1] -= 1
         if size_data_center[len(size_data_center) - 1] == 0:
             size_data_center.pop()
-            size_data_center.sort(reverse=True)
+        if size_data_center[len(size_data_center) - 1] == 0:
+            size_data_center.pop()
         count += 1
-
     return int(count)
 
-def solution4(n, arr):
+
+def solution4(n, arr):  # Владимир С.
     count = 0
     left = 0
     right = n
@@ -132,12 +117,13 @@ def solution4(n, arr):
             left += 1
     return count
 
-def solution5(n, value):
+
+def solution5(n, value):  # Олег Завитаев
     lst = value
     lst.sort(reverse=True)
     cnt = 0
     while True:
-        while lst[len(lst)-1] == 0:
+        while lst[len(lst) - 1] == 0:
             lst.pop()
             if len(lst) <= 1:
                 break
@@ -155,11 +141,12 @@ def solution5(n, value):
         lst.sort(reverse=True)
     return cnt
 
+
 def main(input_file):
     input_file = input_file.rstrip().split('\n')
     n = int(input_file[0])
     size_data_center = list(map(int, input_file[1].rstrip().split()))
-    sol = solution5(n, size_data_center)
+    sol = solution2(n, size_data_center)
     return sol
 
 
